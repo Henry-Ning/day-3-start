@@ -1,14 +1,12 @@
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
+# 🚨 Don't change the code below 👇
+number = int(input("Which number do you want to check? "))
+# 🚨 Don't change the code above 👆
 
-if height >= 120:
-  print("You can")
-  age = int(input("Enter age: "))
-  if age < 12:
-    print("5")
-  elif age <= 18:
-    print("7")
-  else:
-    print("12")
+#Write your code below this line 👇
+
+if number % 2 == 0:
+  print("even")
 else:
-  print("sorry")
+  print("odd") 
+
+
