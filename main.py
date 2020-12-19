@@ -1,12 +1,19 @@
 # 🚨 Don't change the code below 👇
-number = int(input("Which number do you want to check? "))
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
 
-if number % 2 == 0:
-  print("even")
+bmi = round(weight/height**2, 2)
+
+print(bmi)
+
+if bmi < 18.5:
+  print("underweight")
+elif bmi < 25:
+  print("normal weight")
+elif bmi < 30:
+  print("overweight")
 else:
-  print("odd") 
-
-
+  print("obese")
