@@ -29,6 +29,9 @@ if extra_cheese=="Y":
 
 print(bill)
 
+age=46
+if age>=45 and age<=55:
+  print("free")
 
 
 
