@@ -1,24 +1,43 @@
-# 🚨 Don't change the code below 👇
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
-# 🚨 Don't change the code above 👆
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
 
-#Write your code below this line 👇
+direction = input("left or right: ")
 
-
-name1_lower = name1.lower()
-name2_lower = name2.lower()
-true_count = name1_lower.count('t') + name1_lower.count('r')+ name1_lower.count('u') + name1_lower.count('e') + name2_lower.count('t') + name2_lower.count('r')+ name2_lower.count('u') + name2_lower.count('e') 
-love_count = name1_lower.count('l') + name1_lower.count('o')+ name1_lower.count('v') + name1_lower.count('e') + name2_lower.count('l') + name2_lower.count('o')+ name2_lower.count('v') + name2_lower.count('e') 
-print(true_count)
-print(love_count)
-love_score = int(f"{true_count}" + f"{love_count}")
-print(love_score)
-
-if love_score < 10 or love_score > 90:
-  print(f"Your score is {love_score}, you go together like coke and mentos")
-elif love_score > 40 and love_score < 50:
-  print(f"Your love is {love_score}, you are alright together.")
+if direction == "right":
+  action = input("swim or wait: ").lower()
+  if action == "wait":
+    color = input("which door? Red or Blue or Yellow: ").lower()
+    if color == "yellow":
+      print("You Win!")
+    elif color == "red":
+      print("Burned by fire. Game Over.")
+    elif color == "blue":
+      print("Eaten by beasts. Game Over.")
+    else:
+      print("Game over.")
+  else:
+    print("game over")
 else:
-  print(f"Your score is {love_score}")
+  print("game over")
